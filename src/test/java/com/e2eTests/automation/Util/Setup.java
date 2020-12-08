@@ -9,38 +9,35 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-
 public class Setup {
-	
+
 	public static WebDriver driver;
 	static DriverManager driverManager;
-	
+
 	@Before
 	/**
 	 * call browser with design pattern factory navigator
 	 */
 	public static void setup() {
-		
-		
+
 		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
-		driver=driverManager.getDriver();
+		driver = driverManager.getDriver();
 	}
+
 	@After
 	/**
-	 * combed a screenshot in test report if test is marked as field
+	 * embed a screenshot in test report if test is marked as field
 	 */
 	public void embedScreenShot(Scenario scenario) {
-		if(scenario.isFailed()) {
-		try {
-		scenario.write("Current page URL is : " +driver.getCurrentUrl());
-		byte[] screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-		scenario.embed(screenShot, "Image/png");
-		} catch (WebDriverException somePlateformDontSupportScreenShot) {
-		System.err.println(somePlateformDontSupportScreenShot.getMessage());
-		}
+		if (scenario.isFailed()) {
+			try {
+				scenario.write("Current page URL is : " + driver.getCurrentUrl());
+				byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				scenario.embed(screenShot, "image/png");
+			} catch (WebDriverException somePlateformDontSupportScreenShot) {
+				System.err.println(somePlateformDontSupportScreenShot.getMessage());
+			}
 		}
 		driver.quit();
-		}
 	}
-
-
+}

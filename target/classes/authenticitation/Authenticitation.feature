@@ -9,3 +9,5 @@ Feature: Authenticitation - OrangeHRM
     And Je saisie le mot de passe
     And Je clique sur le bouton
     Then Je verifie le compte admin
+    
+    
