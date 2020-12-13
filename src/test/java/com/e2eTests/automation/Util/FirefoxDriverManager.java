@@ -1,4 +1,4 @@
-package com.e2eTests.automation.Util;
+package com.e2eTests.automation.util;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
