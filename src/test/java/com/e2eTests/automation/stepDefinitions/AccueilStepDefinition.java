@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 public class AccueilStepDefinition {
 
-	WebDriver driver;
+	 WebDriver driver;
 	private AccueilPage accueilPage = new AccueilPage();
 
 	public AccueilStepDefinition() {
@@ -40,7 +40,6 @@ public class AccueilStepDefinition {
 	public void jeVerifieLaPagePIM(String sub_menu_PIM) throws Throwable {
 		String pagePim = AccueilPage.pagePIM.getText();
 		Assert.assertTrue(pagePim.contains(sub_menu_PIM));
-
 	}
 
 }
