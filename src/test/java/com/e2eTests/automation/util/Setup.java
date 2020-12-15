@@ -16,17 +16,16 @@ public class Setup {
 
 	@Before
 	/**
-	 * call browser with design pattern factory navigator
+	 * Call browser with the design pattern factory navigator
 	 */
 	public static void setup() {
-
 		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
 		driver = driverManager.getDriver();
 	}
 
 	@After
 	/**
-	 * embed a screenshot in test report if test is marked as field
+	 * Embed a screenshot in test report if test is marked as failed
 	 */
 	public void embedScreenShot(Scenario scenario) {
 		if (scenario.isFailed()) {
@@ -40,4 +39,5 @@ public class Setup {
 		}
 		driver.quit();
 	}
+
 }

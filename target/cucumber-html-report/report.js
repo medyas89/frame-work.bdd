@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 9188001600,
+  "duration": 9801377100,
   "status": "passed"
 });
 formatter.background({
@@ -52,7 +52,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeMeConnecteSurLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 3006144600,
+  "duration": 5137190200,
   "status": "passed"
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeLogin(String)"
 });
 formatter.result({
-  "duration": 81444500,
+  "duration": 67769700,
   "status": "passed"
 });
 formatter.match({
@@ -78,21 +78,21 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeMotDePasse(String)"
 });
 formatter.result({
-  "duration": 59623700,
+  "duration": 58200300,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeCliqueSurLogin()"
 });
 formatter.result({
-  "duration": 2929413400,
+  "duration": 5942577400,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.redirectionVersLAccueil()"
 });
 formatter.result({
-  "duration": 31812900,
+  "duration": 26797101,
   "status": "passed"
 });
 formatter.scenario({
@@ -123,7 +123,7 @@ formatter.match({
   "location": "AccueilStepDefinition.jeCliqueSurLeModuleRecruitment()"
 });
 formatter.result({
-  "duration": 2925681400,
+  "duration": 42885600,
   "status": "passed"
 });
 formatter.match({
@@ -136,15 +136,17 @@ formatter.match({
   "location": "AccueilStepDefinition.jeVerifieLaPageRecruitment(String)"
 });
 formatter.result({
-  "duration": 32928700,
-  "status": "passed"
+  "duration": 24817500,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.e2eTests.automation.stepDefinitions.AccueilStepDefinition.jeVerifieLaPageRecruitment(AccueilStepDefinition.java:31)\r\n\tat ✽.Then je verifie la page Recruitment \"Candidates\"(acceuil/Accueil.feature:15)\r\n",
+  "status": "failed"
 });
+formatter.write("Current page URL is : https://opensource-demo.orangehrmlive.com/index.php/dashboard");
 formatter.after({
-  "duration": 1360742200,
+  "duration": 61833848499,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8427721500,
+  "duration": 8281849000,
   "status": "passed"
 });
 formatter.background({
@@ -183,7 +185,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeMeConnecteSurLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 2819091500,
+  "duration": 2750318599,
   "status": "passed"
 });
 formatter.match({
@@ -196,7 +198,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeLogin(String)"
 });
 formatter.result({
-  "duration": 75272800,
+  "duration": 66800799,
   "status": "passed"
 });
 formatter.match({
@@ -209,21 +211,21 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeMotDePasse(String)"
 });
 formatter.result({
-  "duration": 59931400,
+  "duration": 52413900,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeCliqueSurLogin()"
 });
 formatter.result({
-  "duration": 3347365900,
+  "duration": 4193615400,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.redirectionVersLAccueil()"
 });
 formatter.result({
-  "duration": 27594500,
+  "duration": 24524700,
   "status": "passed"
 });
 formatter.scenario({
@@ -254,7 +256,7 @@ formatter.match({
   "location": "AccueilStepDefinition.jeCliqueSurLeModulePIM()"
 });
 formatter.result({
-  "duration": 1835752100,
+  "duration": 1552436700,
   "status": "passed"
 });
 formatter.match({
@@ -267,11 +269,11 @@ formatter.match({
   "location": "AccueilStepDefinition.jeVerifieLaPagePIM(String)"
 });
 formatter.result({
-  "duration": 31707700,
+  "duration": 1027698799,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1981857600,
+  "duration": 1403508100,
   "status": "passed"
 });
 });

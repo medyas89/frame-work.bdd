@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 public class AccueilStepDefinition {
 
-	 WebDriver driver;
+	 public WebDriver driver;
 	private AccueilPage accueilPage = new AccueilPage();
 
 	public AccueilStepDefinition() {

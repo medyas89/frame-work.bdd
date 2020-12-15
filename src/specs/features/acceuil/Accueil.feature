@@ -17,4 +17,7 @@ Feature: Accueil-OrangeHRM
   @pim
   Scenario: Acceder au module PIM
     When je clique sur le module PIM
-    Then je verifie la page PIM "Configuration"
+    Then je verifie la page PIM "Configuration" 
+
+
+    
